@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melt — Drink the dream.</title>
+  <meta name="description" content="Melt — luxury collagen-infused milkshakes crafted like a beauty ritual. Pearl Vanilla Cloud, Blush Strawberry Veil, Blue Moon Cream." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Soft global ambient blobs (sit behind everything) -->
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient-blob blob-a"></span>
+    <span class="ambient-blob blob-b"></span>
+    <span class="ambient-blob blob-c"></span>
+    <span class="ambient-blob blob-d"></span>
+  </div>
+
+  <!-- Top nav (frosted glass pill) -->
+  <header class="topnav" aria-label="Primary">
+    <a href="#hero" class="brand">
+      <img src="logo%20and%20products/Untitled%20design%20%2886%29.png" alt="Melt" class="brand-logo" />
+    </a>
+    <nav class="nav-links">
+      <a href="#portals">Flavors</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#choose">Order &nbsp;·&nbsp; $48</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================ SECTION 1 — HERO ============================ -->
+    <section id="hero" class="hero" aria-label="Hero — Drink the dream">
+      <div class="hero-inner">
+        <img
+          src="logo%20and%20products/Untitled%20design%20%2886%29.png"
+          alt="Melt logo"
+          class="hero-logo" />
+
+        <h1 class="hero-headline">
+          <span class="word">Drink</span>
+          <span class="word">the</span>
+          <span class="word"><em>dream.</em></span>
+        </h1>
+
+        <p class="hero-sub">
+          The collagen milkshake that turned dessert into a ritual.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#choose" class="btn btn-primary">
+            <span>SHOP THE TRIO — $48</span>
+          </a>
+          <a href="#portals" class="btn btn-ghost">
+            <span>TASTE FIRST</span>
+          </a>
+        </div>
+
+        <div class="hero-bottles" aria-hidden="true">
+          <figure class="hero-bottle hero-bottle--vanilla" data-bottle="vanilla">
+            <span class="bottle-halo halo-vanilla"></span>
+            <img src="logo%20and%20products/Vanilla%20Melt.png" alt="" />
+          </figure>
+          <figure class="hero-bottle hero-bottle--strawberry" data-bottle="strawberry">
+            <span class="bottle-halo halo-strawberry"></span>
+            <img src="logo%20and%20products/Strawberry%20Melt.png" alt="" />
+          </figure>
+          <figure class="hero-bottle hero-bottle--blueberry" data-bottle="blueberry">
+            <span class="bottle-halo halo-blueberry"></span>
+            <img src="logo%20and%20products/Blueberry%20Melt.png" alt="" />
+          </figure>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <span class="scroll-hint-line"></span>
+          <span class="scroll-hint-label">scroll</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================ SECTION 2 — FLAVOR PORTALS ============================ -->
+    <section id="portals" class="portals" aria-label="Flavor portals">
+      <div class="portals-track">
+
+        <!-- Pinned stage -->
+        <div class="portal-stage">
+          <!-- Morphing background layer -->
+          <div class="portal-bg" aria-hidden="true">
+            <span class="portal-bg-fill"></span>
+            <span class="portal-blob portal-blob-1"></span>
+            <span class="portal-blob portal-blob-2"></span>
+            <span class="portal-blob portal-blob-3"></span>
+            <div class="portal-bubbles">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <!-- The 3 bottles all live here, controlled by JS -->
+          <div class="portal-bottles" aria-hidden="true">
+            <figure class="portal-bottle" data-portal-bottle="vanilla">
+              <span class="bottle-halo halo-vanilla"></span>
+              <img src="logo%20and%20products/Vanilla%20Melt.png" alt="" />
+            </figure>
+            <figure class="portal-bottle" data-portal-bottle="strawberry">
+              <span class="bottle-halo halo-strawberry"></span>
+              <img src="logo%20and%20products/Strawberry%20Melt.png" alt="" />
+            </figure>
+            <figure class="portal-bottle" data-portal-bottle="blueberry">
+              <span class="bottle-halo halo-blueberry"></span>
+              <img src="logo%20and%20products/Blueberry%20Melt.png" alt="" />
+            </figure>
+          </div>
+
+          <!-- Text/content layers (3, one per portal) -->
+          <div class="portal-contents">
+
+            <article class="portal-content" data-portal-content="vanilla">
+              <span class="portal-eyebrow">Flavor 01 — Pearl</span>
+              <h2 class="portal-title">Pearl Vanilla Cloud</h2>
+              <p class="portal-desc">
+                Like drinking a silk slip. Vanilla bean, cloud cream, almond, and
+                <strong>8g of marine collagen</strong> &mdash; the one you reach for in a white robe at&nbsp;11am.
+              </p>
+              <ul class="portal-chips">
+                <li class="chip">Vanilla bean</li>
+                <li class="chip">Cloud cream</li>
+                <li class="chip">Almond milk</li>
+                <li class="chip">Collagen</li>
+              </ul>
+            </article>
+
+            <article class="portal-content" data-portal-content="strawberry">
+              <span class="portal-eyebrow">Flavor 02 — Blush</span>
+              <h2 class="portal-title">Blush Strawberry Veil</h2>
+              <p class="portal-desc">
+                Strawberry and rose, served in a glass that matches your blush. Oat milk,
+                white chocolate, and <strong>8g of collagen</strong> &mdash; the bottle that ends up in every flat-lay.
+              </p>
+              <ul class="portal-chips">
+                <li class="chip">Strawberry</li>
+                <li class="chip">Rose cream</li>
+                <li class="chip">Oat milk</li>
+                <li class="chip">Collagen</li>
+              </ul>
+            </article>
+
+            <article class="portal-content" data-portal-content="blueberry">
+              <span class="portal-eyebrow">Flavor 03 — Moon</span>
+              <h2 class="portal-title">Blue Moon Cream</h2>
+              <p class="portal-desc">
+                The 9pm bottle. Blueberry, coconut, vanilla cream, and
+                <strong>8g of collagen</strong> &mdash; quietly otherworldly, like moonlight you can sip.
+              </p>
+              <ul class="portal-chips">
+                <li class="chip">Blueberry</li>
+                <li class="chip">Vanilla cream</li>
+                <li class="chip">Coconut milk</li>
+                <li class="chip">Collagen</li>
+              </ul>
+            </article>
+
+          </div>
+
+          <!-- Progress indicator -->
+          <div class="portal-progress" aria-hidden="true">
+            <span class="portal-progress-dot is-active" data-dot="0"></span>
+            <span class="portal-progress-dot" data-dot="1"></span>
+            <span class="portal-progress-dot" data-dot="2"></span>
+          </div>
+        </div>
+
+        <!-- Scroll spacers (drive the timeline) -->
+        <div class="portal-spacer" data-portal="vanilla"></div>
+        <div class="portal-spacer" data-portal="strawberry"></div>
+        <div class="portal-spacer" data-portal="blueberry"></div>
+      </div>
+    </section>
+
+
+    <!-- ============================ PRODUCT MOMENT ============================ -->
+    <section class="moment" aria-label="Engineered for softness">
+      <div class="moment-inner">
+        <div class="moment-text">
+          <span class="eyebrow">— Engineered for softness —</span>
+          <h2 class="moment-title">8g of collagen.</h2>
+          <p class="moment-desc">
+            Every bottle is formulated by a pastry chef and a clean-beauty formulator,
+            cold-pressed in glass, and shipped to your door before the foam settles.
+          </p>
+
+          <div class="moment-stats">
+            <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-unit">g</span><span class="stat-label">Marine collagen, per bottle</span></div>
+            <div class="stat"><span class="stat-num" data-count="300">0</span><span class="stat-unit">ml</span><span class="stat-label">Small-batch &amp; glass-bottled</span></div>
+            <div class="stat"><span class="stat-num" data-count="48">0</span><span class="stat-unit">hr</span><span class="stat-label">Chilled door-to-door</span></div>
+            <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-unit">°C</span><span class="stat-label">Always served cold</span></div>
+          </div>
+        </div>
+
+        <div class="moment-visual" aria-hidden="true">
+          <span class="moment-orb moment-orb-1"></span>
+          <span class="moment-orb moment-orb-2"></span>
+          <span class="moment-orb moment-orb-3"></span>
+          <figure class="moment-video">
+            <span class="moment-video-frame">
+              <video autoplay muted loop playsinline preload="metadata" poster="logo%20and%20products/Strawberry%20Melt.png">
+                <source src="logo%20and%20products/pour.mp4.mp4" type="video/mp4" />
+              </video>
+            </span>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================ SECTION 3 — TRUST / RITUAL ============================ -->
+    <section id="ritual" class="ritual" aria-label="The Melt Ritual">
+      <div class="ritual-inner">
+        <span class="eyebrow">— A ritual, not a routine —</span>
+        <h2 class="ritual-title">The Melt Ritual</h2>
+        <p class="ritual-sub">
+          A beauty-inspired dessert ritual, crafted for softness, glow, and indulgence.
+        </p>
+
+        <div class="ritual-grid">
+          <article class="glass-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M24 6c4 8 10 13 10 22a10 10 0 1 1-20 0c0-9 6-14 10-22Z" stroke="url(#g1)" stroke-width="1.6" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="g1" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="#F7BFD5"/><stop offset="1" stop-color="#BCE6FE"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>8g of marine collagen</h3>
+            <p>Beauty-grade peptides &mdash; the kind your serum brags about &mdash; in a milkshake.</p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M19 8h10v6c3 1 4 3 4 6v18a6 6 0 0 1-6 6h-6a6 6 0 0 1-6-6V20c0-3 1-5 4-6V8Z" stroke="url(#g2)" stroke-width="1.6" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="g2" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="#ECD8FD"/><stop offset="1" stop-color="#B9A7FF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>Made in glass, never plastic</h3>
+            <p>Heavier, colder, prettier on your nightstand. Recyclable, refillable, never single-use.</p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="18" cy="20" r="6" stroke="url(#g3)" stroke-width="1.6"/>
+                <circle cx="30" cy="20" r="6" stroke="url(#g3)" stroke-width="1.6"/>
+                <circle cx="24" cy="32" r="6" stroke="url(#g3)" stroke-width="1.6"/>
+                <defs>
+                  <linearGradient id="g3" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="#BCE6FE"/><stop offset="0.5" stop-color="#F7BFD5"/><stop offset="1" stop-color="#ECD8FD"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>3 flavors. 3 moods.</h3>
+            <p>Pearl for morning. Blush for afternoon. Moon for night. Each formulated by a pastry chef and a clean-beauty formulator.</p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M24 8l3 9 9 3-9 3-3 9-3-9-9-3 9-3 3-9Z" stroke="url(#g4)" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="38" cy="12" r="2" fill="url(#g4)"/>
+                <circle cx="10" cy="36" r="1.5" fill="url(#g4)"/>
+                <defs>
+                  <linearGradient id="g4" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="#F7BFD5"/><stop offset="1" stop-color="#B9A7FF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>300ml of small-batch joy</h3>
+            <p>Hand-finished, chilled to 2°C, delivered within 48 hours of bottling. Drink within 7 days for peak silk.</p>
+          </article>
+        </div>
+
+        <!-- twinkling sparkles -->
+        <div class="sparkles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================ HOW THE RITUAL WORKS ============================ -->
+    <section class="how" aria-label="How the ritual works">
+      <div class="how-inner">
+        <span class="eyebrow">— How the ritual works —</span>
+        <h2 class="how-title">Three steps to softness.</h2>
+
+        <ol class="how-steps">
+          <li class="how-step">
+            <span class="step-num">01</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <ellipse cx="16" cy="44" rx="6" ry="14" stroke="url(#hs1)" stroke-width="1.6"/>
+                <ellipse cx="32" cy="42" rx="6" ry="16" stroke="url(#hs1)" stroke-width="1.6"/>
+                <ellipse cx="48" cy="44" rx="6" ry="14" stroke="url(#hs1)" stroke-width="1.6"/>
+                <defs><linearGradient id="hs1" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#F7BFD5"/><stop offset="1" stop-color="#BCE6FE"/></linearGradient></defs>
+              </svg>
+            </div>
+            <h3>Choose your trio.</h3>
+            <p>Pick all three flavors or build a custom set of your favorites.</p>
+          </li>
+
+          <li class="how-step">
+            <span class="step-num">02</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <rect x="10" y="22" width="34" height="22" rx="4" stroke="url(#hs2)" stroke-width="1.6"/>
+                <path d="M44 28h8l6 8v8H44" stroke="url(#hs2)" stroke-width="1.6"/>
+                <circle cx="20" cy="48" r="4" stroke="url(#hs2)" stroke-width="1.6"/>
+                <circle cx="48" cy="48" r="4" stroke="url(#hs2)" stroke-width="1.6"/>
+                <path d="M30 14l-2 4M34 14l2 4M28 8l-3 4" stroke="url(#hs2)" stroke-width="1.4" stroke-linecap="round"/>
+                <defs><linearGradient id="hs2" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#ECD8FD"/><stop offset="1" stop-color="#B9A7FF"/></linearGradient></defs>
+              </svg>
+            </div>
+            <h3>We chill &amp; ship in 48 hrs.</h3>
+            <p>Glass-bottled, packed cold, delivered to NYC, LA, and Miami.</p>
+          </li>
+
+          <li class="how-step">
+            <span class="step-num">03</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="22" stroke="url(#hs3)" stroke-width="1.6"/>
+                <path d="M32 18v14l10 6" stroke="url(#hs3)" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="32" cy="32" r="2" fill="url(#hs3)"/>
+                <defs><linearGradient id="hs3" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#BCE6FE"/><stop offset="1" stop-color="#F7BFD5"/></linearGradient></defs>
+              </svg>
+            </div>
+            <h3>Sip one a day for 3 days of soft.</h3>
+            <p>A bottle a day. Pearl morning, blush afternoon, moon at night.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ============================ UGC SECTION ============================ -->
+    <section class="ugc" aria-label="Melt in the wild">
+      <div class="ugc-inner">
+        <span class="eyebrow">— @meltdrinks —</span>
+        <h2 class="ugc-title">Melt in the wild.</h2>
+        <p class="ugc-sub">Tagged with #drinkthedream this week.</p>
+
+        <div class="ugc-grid">
+          <figure class="ugc-tile" data-tile="1">
+            <img class="ugc-bg" src="logo%20and%20products/IG%20UGC%20Images/ugc-1.jpg.png" alt="@sofiaplum's Pearl Vanilla Cloud moment" loading="lazy" />
+            <span class="ugc-handle">@sofiaplum</span>
+            <span class="ugc-heart" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 5.65-7 10-7 10Z" fill="white"/></svg>
+            </span>
+          </figure>
+          <figure class="ugc-tile" data-tile="2">
+            <img class="ugc-bg" src="logo%20and%20products/IG%20UGC%20Images/ugc-2.jpg.png" alt="@iris.studio's Blush Strawberry Veil moment" loading="lazy" />
+            <span class="ugc-handle">@iris.studio</span>
+            <span class="ugc-heart" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 5.65-7 10-7 10Z" fill="white"/></svg>
+            </span>
+          </figure>
+          <figure class="ugc-tile" data-tile="5">
+            <img class="ugc-bg" src="logo%20and%20products/IG%20UGC%20Images/ugc-5.jpg.png" alt="@lila.haze's Blush Strawberry Veil moment" loading="lazy" />
+            <span class="ugc-handle">@lila.haze</span>
+            <span class="ugc-heart" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 5.65-7 10-7 10Z" fill="white"/></svg>
+            </span>
+          </figure>
+        </div>
+
+        <a class="ugc-cta" href="#">Tag <strong>@meltdrinks</strong> &middot; share your melt moment &rarr;</a>
+      </div>
+    </section>
+
+
+    <!-- ============================ FAQ ============================ -->
+    <section class="faq" aria-label="Frequently asked">
+      <div class="faq-inner">
+        <span class="eyebrow">— Softly answered —</span>
+        <h2 class="faq-title">Questions, in a whisper.</h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>
+              <span>Does collagen actually do anything?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <p>The 8g of marine collagen peptides in every bottle is the same beauty-grade form featured in your favorite skincare powders. We don't make medical claims &mdash; we just think it tastes incredible and feels like a soft-luxury habit.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How long does it stay fresh?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <p>Each bottle is hand-finished and chilled to 2°C before it leaves us. Once it lands, keep it refrigerated and drink within 7 days for peak silk. No preservatives, no shortcuts.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Where do you ship?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <p>Right now, NYC, LA, and Miami &mdash; 48-hour chilled delivery on every order. We're expanding to SF and Toronto this season. Drop your zip on the order page to check.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Is it sweet? Is there sugar?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <p>Softly sweet, not dessert-sweet. We use a touch of pearl sugar and the natural sweetness of oat &amp; almond milk. 9g of sugar per bottle, no syrups, no aftertaste.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================ SECTION 4 — CHOOSE YOUR DREAM ============================ -->
+    <section id="choose" class="choose" aria-label="Choose your dream">
+      <div class="choose-inner">
+        <span class="eyebrow">— Build your trio —</span>
+        <h2 class="choose-title">Build your ritual.</h2>
+        <p class="choose-sub">
+          Pick your three. We ship them chilled, in a keepsake box, within 48 hours.
+        </p>
+
+        <div class="choose-bottles" aria-hidden="true">
+          <figure class="choose-bottle" data-choose-bottle="vanilla">
+            <span class="bottle-halo halo-vanilla"></span>
+            <img src="logo%20and%20products/Vanilla%20Melt.png" alt="" />
+          </figure>
+          <figure class="choose-bottle" data-choose-bottle="strawberry">
+            <span class="bottle-halo halo-strawberry"></span>
+            <img src="logo%20and%20products/Strawberry%20Melt.png" alt="" />
+          </figure>
+          <figure class="choose-bottle" data-choose-bottle="blueberry">
+            <span class="bottle-halo halo-blueberry"></span>
+            <img src="logo%20and%20products/Blueberry%20Melt.png" alt="" />
+          </figure>
+        </div>
+
+        <div class="selector glass-card selector-panel">
+          <div class="selector-tiles">
+            <button class="selector-tile" data-select="vanilla" aria-label="Choose Pearl Vanilla Cloud">
+              <span class="tile-swatch swatch-vanilla"></span>
+              <span class="tile-name">Pearl Vanilla Cloud</span>
+              <span class="tile-flavor">Vanilla · almond · cloud cream</span>
+            </button>
+            <button class="selector-tile" data-select="strawberry" aria-label="Choose Blush Strawberry Veil">
+              <span class="tile-swatch swatch-strawberry"></span>
+              <span class="tile-name">Blush Strawberry Veil</span>
+              <span class="tile-flavor">Strawberry · rose · oat</span>
+            </button>
+            <button class="selector-tile" data-select="blueberry" aria-label="Choose Blue Moon Cream">
+              <span class="tile-swatch swatch-blueberry"></span>
+              <span class="tile-name">Blue Moon Cream</span>
+              <span class="tile-flavor">Blueberry · coconut · vanilla</span>
+            </button>
+          </div>
+
+          <div class="selector-prices">
+            <div class="price-row">
+              <span class="price-label">The Trio</span>
+              <span class="price-amount">$48</span>
+            </div>
+            <div class="price-row price-row-sub">
+              <span class="price-label">Subscribe &amp; save 20%</span>
+              <span class="price-amount">$39<span class="price-period">/box</span></span>
+            </div>
+          </div>
+
+          <div class="selector-ctas">
+            <a href="#" class="btn btn-primary">
+              <span>SHIP MY RITUAL — $48</span>
+            </a>
+            <a href="#" class="btn btn-ghost">
+              <span>SUBSCRIBE — SAVE 20%</span>
+            </a>
+          </div>
+
+          <p class="selector-fine">First 500 boxes shipping now to NYC, LA &amp; Miami.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sticky mobile order bar -->
+  <a href="#choose" class="sticky-cta" aria-label="Build your trio for $48">
+    <span class="sticky-cta-text">Build your trio &nbsp;·&nbsp; <strong>$48</strong></span>
+    <span class="sticky-cta-arrow">&rarr;</span>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">melt</span>
+      <span class="footer-tag">Drink the dream.</span>
+      <span class="footer-credit">Designed by <strong>Katrina Diab</strong></span>
+      <span class="footer-meta">© 2026 · A portfolio design concept</span>
+    </div>
+  </footer>
+
+  <!-- GSAP via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

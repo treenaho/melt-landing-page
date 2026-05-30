@@ -1,0 +1,18 @@
+# Workspace tooling — not part of the site
+.claude/
+Inspiration/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
