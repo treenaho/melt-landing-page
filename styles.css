@@ -184,7 +184,10 @@ p { margin: 0; }
   border: 1px solid var(--glass-border);
   border-radius: 999px;
   box-shadow: var(--glass-shadow);
+  white-space: nowrap;
+  max-width: calc(100vw - 32px);
 }
+.nav-links a { white-space: nowrap; }
 
 .brand-logo {
   height: 32px;
@@ -207,10 +210,12 @@ p { margin: 0; }
 .nav-links a:hover { color: var(--ink); }
 
 @media (max-width: 640px) {
-  .topnav { gap: 16px; padding: 8px 14px; }
-  .nav-links { gap: 16px; }
+  .topnav { gap: 14px; padding: 8px 14px; top: 16px; }
+  .nav-links { gap: 14px; padding-right: 4px; }
   .nav-links a { font-size: 12px; }
-  .brand-logo { height: 26px; }
+  .brand-logo { height: 24px; }
+  /* Hide the price suffix on mobile — keeps nav on one line */
+  .nav-price { display: none; }
 }
 
 
@@ -720,11 +725,16 @@ p { margin: 0; }
 @media (max-width: 900px) {
   .portal-content { grid-template-columns: 1fr; gap: 20px; padding: 0 28px; text-align: center; }
   .portal-content .portal-chips { justify-content: center; }
-  .portal-bottle { top: auto; right: auto; left: 50%; bottom: 1vh; }
-  .portal-bottle img { height: clamp(320px, 52vh, 480px); }
+  .portal-bottle { top: auto; right: auto; left: 50%; bottom: 80px; }
+  .portal-bottle img { height: clamp(280px, 44vh, 420px); }
   .portal-bottles { align-items: flex-end; padding-bottom: 8vh; }
-  .portal-contents { align-items: flex-start; padding-top: 6vh; }
+  /* push content down so titles clear the fixed nav (nav bottom ~ 65-70px) */
+  .portal-contents { align-items: flex-start; padding-top: 100px; }
   .portal-progress { right: 12px; }
+  /* Tighten title size on mobile so two-word flavor names don't crowd */
+  .portal-title { font-size: clamp(40px, 11vw, 64px); margin-bottom: 16px; }
+  .portal-eyebrow { margin-bottom: 8px; }
+  .portal-desc { font-size: 15px; margin-bottom: 20px; }
 }
 
 

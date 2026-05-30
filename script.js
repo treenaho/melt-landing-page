@@ -382,18 +382,6 @@
 
 
   // -----------------------------
-  // How-it-works — staggered reveal
-  // -----------------------------
-  gsap.utils.toArray('.how-step').forEach((el, i) => {
-    gsap.fromTo(el, { opacity: 0, y: 40, filter: 'blur(6px)' }, {
-      opacity: 1, y: 0, filter: 'blur(0px)',
-      duration: 0.9, ease: 'power3.out', delay: i * 0.12,
-      scrollTrigger: { trigger: '.how', start: 'top 80%' },
-    });
-  });
-
-
-  // -----------------------------
   // UGC tiles — staggered float-up
   // -----------------------------
   gsap.utils.toArray('.ugc-tile').forEach((el, i) => {
